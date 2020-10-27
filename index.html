@@ -171,6 +171,17 @@
                     spot.position.x = 100;
             });
         
+
+            //Astronaura
+            var spriteManagerPlayer = new BABYLON.SpriteManager("playerManager", "textures/Walle.png", 1, 16, scene);
+
+            // First animated player
+            var player = new BABYLON.Sprite("player", spriteManagerPlayer);
+            player.playAnimation(0, 19, true, 200);
+            player.position.y = 6;
+            player.size = 3;
+
+
             return scene;
         }
     var engine;
