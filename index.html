@@ -173,11 +173,11 @@
         
 
             //Astronaura
-            var spriteManagerPlayer = new BABYLON.SpriteManager("playerManager", "textures/Walle.png", 1, 16, scene);
+            var spriteManagerPlayer = new BABYLON.SpriteManager("playerManager", "textures/Astronaut.png", 1, {width: 48, height: 48}, scene);
 
             // First animated player
             var player = new BABYLON.Sprite("player", spriteManagerPlayer);
-            player.playAnimation(0, 19, true, 200);
+            player.playAnimation(0, 11, true, 250);
             player.position.y = 6;
             player.size = 3;
 
