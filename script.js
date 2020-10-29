@@ -8,7 +8,7 @@ window.addEventListener('DOMContentLoaded', function() {
         //declaração de todas as variáveis
         scene = new BABYLON.Scene(engine);
         var spot = new BABYLON.PointLight("spot", new BABYLON.Vector3(0, 30, 10), scene);
-        var camera = new BABYLON.ArcRotateCamera("Camera", 0, 0.8, 100, BABYLON.Vector3.Zero(), scene);
+        var camera = new BABYLON.ArcRotateCamera("Camera", -20, 50, 80, BABYLON.Vector3.Zero(), scene);
         var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
         var ground = BABYLON.Mesh.CreateGroundFromHeightMap("ground", "textures/moongray.jpg", 200, 200, 200, 0, 10, scene, false);
         var sun = BABYLON.Mesh.CreateSphere("sun", 5, 2, scene);
