@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', function() {
         var camera = new BABYLON.ArcRotateCamera("Camera", -20, 50, 80, BABYLON.Vector3.Zero(), scene);
         var groundMaterial = new BABYLON.StandardMaterial("ground", scene);
         var ground = BABYLON.Mesh.CreateGroundFromHeightMap("ground", "textures/moongray.jpg", 200, 200, 200, 0, 10, scene, false);
-        var sun = BABYLON.Mesh.CreateSphere("sun", 5, 2, scene);
+        var sun = BABYLON.Mesh.CreateSphere("sun", 1.2, 1.2, scene);
         var particleSystem = new BABYLON.ParticleSystem("particles", 2000, scene);
         var keys = [];
         var animation = new BABYLON.Animation("animation", "position.x", 30, BABYLON.Animation.ANIMATIONTYPE_FLOAT,
